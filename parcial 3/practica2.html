@@ -10,35 +10,35 @@
 <body>
     <div class="container">
         <h1>Registro de alumno</h1>
-        <form action="">
+        <form action="practica2.php" method="GET">
             <div class="form-group">    
                 <label for="">Nombre:</label>
-                <input name="nombre" type="text" class="form-control">
+                <input name="nombre" type="text" class="form-control" required>
             </div><br>
             <div class="form group">
                 <label for="">Edad:</label>
-                <input name="edad" type="number" class="form-control">
+                <input name="edad" type="number" class="form-control" required>
             </div><br>
             <div class="form-group">
                 <label for="">Escuela:</label>
-                <select name="escuela" class="form-control" >
+                <select name="escuela" class="form-control">
                     <option value="selecciona una escuela">Selecciona una escuela</option>
-                    <option value="CEIS107">Cetis 107</option>
-                    <option value="CBETIS 224">Cbetis</option>
-                    <option value="COBAES">cobaes</option>
+                    <option value="CETIS107">CETIS 107</option>
+                    <option value="CBETIS 224">CBETIS 224</option>
+                    <option value="COBAES">COBAES</option>
                 </select>
 
             </div><br>
             <div class="form-group">
                 <label for="">Fecha de Ingreso</label>
-                <input name="fecha_ingreso" type="date" class="form-control">
+                <input name="fecha_ingreso" type="date" class="form-control" required>
             </div><br>
             <div class="form-group">
                 <label for="">Direccion:</label>
                 <textarea name="direccion" cols="30" rows="4" class="form-control"></textarea>
             </div><br>
             <div>
-                <input type="submit" class="btn btn-primary">
+                <input type="submit" class="btn btn-primary" required>
             </div>
         </form>
 
